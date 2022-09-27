@@ -63,4 +63,9 @@ export class LoginComponent implements OnInit {
 
   }
 
+  logGoog(){
+    this.authService.logGmail().then(us=> console.log(us));
+
+  }
+
 }

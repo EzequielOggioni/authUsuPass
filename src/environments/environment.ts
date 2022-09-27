@@ -7,14 +7,16 @@ import { initializeApp } from "firebase/app";
 
 export const environment = {
     production: true,
+    hola: {},
     firebaseConfig : {
-      apiKey: "AIzaSyD84WKfDNlwSMw20tFcNDcqnEPbBopo0iA",
-      authDomain: "app-sala-de-juegos.firebaseapp.com",
-      projectId: "app-sala-de-juegos",
-      storageBucket: "app-sala-de-juegos.appspot.com",
-      messagingSenderId: "929187839117",
-      appId: "1:929187839117:web:47951a81c8178a01e8b6c4"
-    },
+      projectId: 'beltran-1ae8a',
+      appId: '1:926158595015:web:0a6adf8ffb761c9d8d6fe2',
+      storageBucket: 'beltran-1ae8a.appspot.com',
+      locationId: 'us-central',
+      apiKey: 'AIzaSyAgbm-R7Rz8lFEtYQEGHtK9XmNwMkG3gyo',
+      authDomain: 'beltran-1ae8a.firebaseapp.com',
+      messagingSenderId: '926158595015',
+  },
 };
 
 

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from "@angular/fire/compat/auth";
+import firebase  from 'firebase/compat/app';
 
 
 @Injectable({
@@ -11,7 +12,7 @@ export class AuthService {
 
    login(email:string, pass:string){
     return new Promise((resolve, rejected) => {
-      this.angularFireAuth..signInWithEmailAndPassword(email, pass).then(userData => {
+      this.angularFireAuth.signInWithEmailAndPassword(email, pass).then(userData => {
         resolve(userData);
       }, (error: any) => {
         console.log(error);
@@ -69,6 +70,11 @@ registerUser(email:string, pass:string){
   });
 }
 
+
+logGmail(){
+ return this.angularFireAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
+
+}
   
 getUserLogged(){
   return this.angularFireAuth.authState;
